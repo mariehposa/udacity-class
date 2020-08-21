@@ -14,15 +14,17 @@ def binary_search(input_array, value):
     """Your code goes here."""
     first = input_array[0]
     last = len(input_array)-1
-    mid_index = int(len(input_array) % 2)
 
-    if mid_index == value:
-        return mid_index
-        
-    if mid_index > value:
+    while(first <= last):
+        mid_index = int((first + last) % 2)
 
-
-    return -1
+        if mid_index == value:
+            return mid_index
+        elif mid_index > value:
+            first = mid_index - 1
+        else:
+            first = mid_index + 1
+        return -1
 
 test_list = [1,3,9,11,15,19,29]
 test_val1 = 25
