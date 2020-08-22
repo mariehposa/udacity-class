@@ -1,5 +1,5 @@
 def get_fib(position):
-    if position == 0 or 1:
+    if position == 0 or position == 1:
         return position
     else:
         # print(position - 1, position - 2)
