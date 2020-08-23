@@ -2,7 +2,6 @@
 Input a list.
 Output a sorted list."""
 def quicksort(array):
-
     low = []
     high = []
     equal = []
@@ -12,15 +11,14 @@ def quicksort(array):
     
     for i in array:
         pivot = array[0]
-        if(array[i] < pivot):
-            low.append(array[i])
-        elif(array[i] > pivot):
-            high.append(array[i])
+        if(i < pivot):
+            low.append(i)
+        elif(i > pivot):
+            high.append(i)
         else:
-            equal.append(array[i])
+            equal.append(i)
 
-    # output = ort(low)+sort(equal)+sort(high)
-    return(low)
+    return(quicksort(low)+quicksort(equal)+quicksort(high))
 
-test = [21, 4, 1, 3, 9, 20, 25, 6, 21, 14]
+test = [21, 4, 1]
 print(quicksort(test))
