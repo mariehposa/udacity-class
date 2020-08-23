@@ -7,7 +7,7 @@ def quicksort(array):
     high = []
     equal = []
 
-    if len(array) == 1:
+    if len(array) <= 1:
         return array
     
     for i in array:
