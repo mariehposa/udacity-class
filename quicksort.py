@@ -6,6 +6,9 @@ def quicksort(array):
     low = []
     high = []
     equal = []
+
+    if len(array) == 1:
+        return array
     
     for i in array:
         pivot = array[0]
