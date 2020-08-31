@@ -42,7 +42,7 @@ print(usa_cities)
 # b = sorted(locations['Asia'])
 # print(b)
 
-# asia_cities = sorted(locations['Asia'].items(), locations['Asia'].values())
+# asia_cities = sorted(locations['Asia'].items())
 asia_cities = sorted([])
 
 for country, city  in sorted(locations['Asia'].items()):
