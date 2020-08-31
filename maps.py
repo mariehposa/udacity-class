@@ -18,9 +18,9 @@ Shanghai (China, Asia)"""
 locations = {'North America': {'USA': ['Mountain View']}}
 
 locations['Asia'] = {'India': ['Bangalore']}
-locations['NorthAmerica'].append({'USA': ['Atlanta']})
+locations['North America']['USA'] = ['Atlanta']
 locations['Africa'] = {'Egypt': ['Cairo']}
-locations['Asia'] = {'China': ['Shanghai']}
+locations['Asia']['China'] = ['Shanghai']
 
 """Print the following (using "print").
 1. A list of all cities in the USA in
@@ -35,3 +35,6 @@ American City
 2
 Asian City - Country
 Asian City - Country"""
+
+for i in locations.keys():
+    print(i)
