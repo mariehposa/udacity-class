@@ -18,7 +18,7 @@ Shanghai (China, Asia)"""
 locations = {'North America': {'USA': ['Mountain View']}}
 
 locations['Asia'] = {'India': ['Bangalore']}
-locations['North America']['USA'] = ['Atlanta']
+locations['North America']['USA'].append('Atlanta')
 locations['Africa'] = {'Egypt': ['Cairo']}
 locations['Asia']['China'] = ['Shanghai']
 
@@ -36,5 +36,5 @@ American City
 Asian City - Country
 Asian City - Country"""
 
-for i in locations.keys():
-    print(i)
+usa_cities = sorted(locations['North America']['USA'])
+print('1', usa_cities)
