@@ -2,7 +2,7 @@
 Input a list.
 Output a sorted list."""
 
-# O(n2)
+# O(n)
 def quicksort(array):
     low = []
     high = []
