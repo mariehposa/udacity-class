@@ -30,7 +30,7 @@ class HashTable(object):
           if self.table[index] != None:
             if string in self.table[index]:
               return index
-        
+        return -1
 
     def calculate_hash_value(self, string):
         """Helper function to calulate a
