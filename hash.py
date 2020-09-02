@@ -15,7 +15,8 @@ class HashTable(object):
         if index != None:
           if self.table[index] == None:
             self.table[index] = [string]
-        
+          else:
+            self.table[index].append(string)
 
     def lookup(self, string):
         """Return the hash value if the
