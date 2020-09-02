@@ -20,6 +20,7 @@ class HashTable(object):
     def calculate_hash_value(self, string):
         """Helper function to calulate a
         hash value from a string."""
+        hash_value = (ord(string[0]) * 100) + ord(string[1])
         return -1
     
 # Setup
