@@ -11,6 +11,11 @@ class HashTable(object):
         the table."""
         
         index = self.calculate_hash_value(string)
+        
+        if index != None:
+          if self.table[index] == None:
+            self.table[index] = [string]
+        
 
     def lookup(self, string):
         """Return the hash value if the
