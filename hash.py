@@ -39,6 +39,7 @@ class HashTable(object):
         hash_value = (ord(string[0]) * 100) + ord(string[1])
         return hash_value
     
+    
 # Setup
 hash_table = HashTable()
 
