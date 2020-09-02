@@ -23,6 +23,8 @@ class HashTable(object):
         """Return the hash value if the
         string is already in the table.
         Return -1 otherwise."""
+
+        index = self.calculate_hash_value(string)
         return -1
 
     def calculate_hash_value(self, string):
