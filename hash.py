@@ -25,7 +25,12 @@ class HashTable(object):
         Return -1 otherwise."""
 
         index = self.calculate_hash_value(string)
-        return -1
+
+        if index != None:
+          if self.table[index] != None:
+            if string in self.table[index]:
+              return index
+        
 
     def calculate_hash_value(self, string):
         """Helper function to calulate a
