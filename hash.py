@@ -9,7 +9,8 @@ class HashTable(object):
     def store(self, string):
         """Input a string that's stored in 
         the table."""
-        pass
+        
+        index = self.calculate_hash_value(string)
 
     def lookup(self, string):
         """Return the hash value if the
