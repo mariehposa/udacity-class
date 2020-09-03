@@ -3,7 +3,7 @@ def get_fib(position):
         return position   #O(1)
     else:
         # print(position - 1, position - 2)
-        return(get_fib(position - 1) + get_fib(position - 2)) 
+        return(get_fib(position - 1) + get_fib(position - 2))  #O(n)
     return -1
 
 # Test cases
